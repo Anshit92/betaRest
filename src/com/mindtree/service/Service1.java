@@ -46,10 +46,8 @@ public class Service1 {
 	            jsonObject.put(rsmd.getColumnName(i), columnValue);
 	        }
 	    }} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return Response.status(200).entity(""+jsonObject.toString()).build(); 
@@ -65,10 +63,8 @@ public class Service1 {
 		String query = "insert into employee values('"+name+"',"+age+",'"+gender+"')";
 		stmt.executeUpdate(query);
 	  } catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return Response.status(200).build();
