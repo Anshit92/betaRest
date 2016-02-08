@@ -94,7 +94,7 @@ public class Service1 {
 	@Path("/hello")
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response displayS(InputStream incomingData) throws ClassNotFoundException, SQLException {
-		String str="Hello World";
+		String str="Hello Mindtree World,";
 		return Response.status(200).entity(""+str).build();
 	}
 
