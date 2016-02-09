@@ -14,6 +14,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.flywaydb.core.Flyway;
 import org.json.simple.JSONObject;
 
 import com.mindtree.jdbc.JdbcConnection;
@@ -79,6 +80,7 @@ public class Service1 {
 		Statement stmt=connec.createStatement();
 		String query = "insert into orders values('"+name+"','"+description+"')";
 		stmt.executeUpdate(query);
+		
 	  } catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -89,6 +91,19 @@ public class Service1 {
 		return Response.status(200).build();
 	}
 	
+	@GET
+	@Path("/fly")
+	@Produces(MediaType.TEXT_PLAIN)
+	public Response fly(InputStream incomingData) throws ClassNotFoundException, SQLException {
+		Flyway flyway = new Flyway();
+
+        // Point it to the database
+        flyway.setDataSource("jdbc:mysql://13.76.132.132:3306/employee_order_db", "root", "Welcome123");
+
+        // Start the migration
+        flyway.migrate();
+		return Response.status(200).entity("Flyway created tables").build();
+	}
 	
 	@GET
 	@Path("/hello")
