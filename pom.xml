@@ -4,6 +4,15 @@
   <artifactId>EmployeeOrderRest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+
+<pluginRepositories>
+<pluginRepository>
+<id>sonatype-oss-snapshots</id>
+<name>Sonatype OSS Snapshots</name>
+<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+</pluginRepository>
+</pluginRepositories> 
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -50,7 +59,7 @@
 			
 				<groupId>net.wouterdanes.docker</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-			  <version>3.0.1</version>
+			  <version>3.0.1-SNAPSHOT</version>
 				
 				<executions>
 					<execution>
