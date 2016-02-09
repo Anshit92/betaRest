@@ -44,7 +44,14 @@
 		<jstl.version>1.2</jstl.version>
 		<servlet.version>2.5</servlet.version>
   </properties>
-  
+  <distributionManagement>
+<!-- use the following if you're not using a snapshot version. -->
+<repository>
+    <id>anshit92</id>
+    <name>RepositoryAnsh</name>
+    <url>http://0.0.0.0:2375/anshit92/</url>
+</repository>
+</distributionManagement>
   <dependencies>
   
   	<dependency>
