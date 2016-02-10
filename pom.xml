@@ -82,6 +82,10 @@
 										<artifact>
 											<file>${project.basedir}/src/main/docker/start_up.sh</file>
 										</artifact>
+										<artifact>
+                        				<file>${project.basedir}/target/${project.artifactId}-${project.version}.jar</file>
+                        				<dest>${project.artifactId}.jar</dest>
+                    				</artifact>
 									</artifacts>
 									<nameAndTag>anshit92/betaapp:${project.version}</nameAndTag>
 									<registry>registry.hub.docker.com</registry>
