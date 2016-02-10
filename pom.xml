@@ -87,8 +87,9 @@
                         <dest>${project.artifactId}.war</dest>
                     </artifact>
 									</artifacts>
+									<keep>true</keep>
 									<nameAndTag>anshit92/betaapp:${project.version}</nameAndTag>
-									<registry>registry.hub.docker.com</registry>
+								<!--	<registry>registry.hub.docker.com</registry> -->
 									<push>true</push>
 								</image>
 							</images>
