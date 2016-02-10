@@ -72,7 +72,7 @@
 						<configuration>
 							<images>
 								<image>
-									<id>${project.artifactId}</id>
+									<id>EmployeeOrderRest</id>
 									<dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
 									<keep>true</keep>
 									<artifacts>
