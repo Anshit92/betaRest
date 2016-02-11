@@ -98,7 +98,7 @@ public class Service1 {
 		Flyway flyway = new Flyway();
 
         // Point it to the database
-        flyway.setDataSource("jdbc:mysql://13.76.132.132:3306/employee_order_db", "root", "Welcome123");
+        flyway.setDataSource("jdbc:mysql://13.76.128.106:3306/employee_order_db", "root", "Welcome123");
 
         // Start the migration
         flyway.migrate();

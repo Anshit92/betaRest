@@ -11,7 +11,7 @@ public class JdbcConnection {
 	static Connection makeSFObject() throws ClassNotFoundException, SQLException
 	{
      Class.forName("com.mysql.jdbc.Driver");
-      connectionJdbc = DriverManager.getConnection("jdbc:mysql://13.76.132.132:3306/employee_order_db?user=root&password=Welcome123");
+      connectionJdbc = DriverManager.getConnection("jdbc:mysql://13.76.128.106:3306/employee_order_db?user=root&password=Welcome123");
      return connectionJdbc;
    }
 	
