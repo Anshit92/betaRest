@@ -85,7 +85,7 @@
 										
 									</artifacts>
 									<keep>true</keep>
-									<nameAndTag>anshit92/betarest:${project.version}</nameAndTag>
+									<nameAndTag>anshit92/betarest:latest</nameAndTag>
 								<!--	<registry>registry.hub.docker.com</registry> -->
 									<push>true</push>
 								</image>
